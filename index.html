@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+  <script src="https://canvasjs.com/assets/script/jquery.canvasjs.min.js"></script>
+  <script src="main.js"></script>
+  <link rel="stylesheet" href="style.css">
+  <title>Crypto Currencies</title>
+</head>
+<body>
+  <!-- Header -->
+  <div class="container-fluid">
+    <div class="row">
+      <div class="col-12"><header>
+        <header><h1 class="display-8">Crypto Currencies</h1></header>
+      </div>
+    </div>
+  </div>
+
+  <!-- Menu -->
+  <div class="container">
+    <div class="row">
+      <div class="col-sm-12 col-md-7 col-lg-9 navstile">
+        <ul class="nav nav-pills">
+            <li class="nav-item">
+              <a class="nav-link active" href="#" id="toHome">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#" id="toReports">Live Reports</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#" id="toAbout" >About</a>
+            </li>
+        </ul>
+      </div>
+      <div class="col-sm-12 col-md-5 col-lg-3 navstile form-inline">
+        <input class="form-control w-60" id="search" type="text" placeholder="Search" aria-label="Search">
+        <button class="btn btn-outline-success my-2 my-sm-0" id="searchButton">Search</button>
+      </div>
+    </div>
+      <img class="loader" src="assets/loader.gif" alt="">
+  </div>
+  
+  <!-- home -->
+  <div class="container">
+    <div class="row" id="home"></div>
+  </div>
+
+  <!-- Chart -->
+  <div class="container-fluid">
+    <div class="row">
+      <div class="col-12">
+        <div id="chartContainer" class="none"></div>
+      </div>
+    </div>
+  </div>
+  
+  <!--About-->
+  <div class="container">
+    <div id="about" class="card mb-3 none" style="max-width: 100%;">
+      <div class="row no-gutters">
+        <div class="col-md-3">
+          <img src="assets/profil.jpg" class="card-img" alt="...">
+      
+        </div>
+        <div class="col-md-8">
+          <div class="card-body">
+            <h5 class="card-title">About Crypto Currencies Project</h5>
+            <p class="card-text">My name is Dudi Kaplan, married to Yocheved. We have two beautiful daughters Racheli and Malki, we live in Lod Israel.</p>
+            <p class="card-text">In the past two months I have been studying web development at john Bryce College in Tel Aviv.</p>
+            <p class="card-text ">My studies at the college are a little difficult and challenging, but I can keep up the pace until we have learned the following technologies:</p>
+            <ul class="ulstyle">
+                <li><h6>HTML</h6></li>
+                <li><h6>CSS</h6></li>
+                <li><h6>JavaScript</h6></li>
+                <li><h6>Ajax</h6></li>
+                <li><h6>Jquery</h6></li>
+                <li><h6>Advanced JavaScript</h6></li>
+                <li><h6>REST</h6></li>
+              </ul>
+            <p class="card-text ">The Crypto Currencies project focuses primarily on the technology of <span class="bold">ajax</span> and the <span class="bold">jquery.</span>The project constitutes the completion of the second phase during the course.</p><br>
+            <p class="card-text"><large class="text-muted">All Rights Reserved &copy;</large></p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+<!-- Modal -->
+  <div class="modal fade" id="modal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalLongTitle">Select check boxes to remove</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+          <button type="button" class="btn btn-primary" id="saveChanges">Save changes</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+</html>
